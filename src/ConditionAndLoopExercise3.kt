@@ -9,7 +9,7 @@ fun calculateGrade(mark: Int): String {
     }
 }
 
-fun calculateGradesIf(mark: Int): String {
+fun calculateGradesIfs(mark: Int): String {
     return if (mark in 75..100) {
         "A"
     } else if (mark in 65..74) {
@@ -36,7 +36,7 @@ fun main() {
 
     // Using the if-else expression
     for (mark in marks) {
-        val grade = calculateGradesIf(mark)
+        val grade = calculateGradesIfs(mark)
         println("Mark: $mark - Grade: $grade")
     }
 }
